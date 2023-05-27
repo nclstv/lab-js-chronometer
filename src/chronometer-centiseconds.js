@@ -14,7 +14,7 @@ class Chronometer {
   }
 
   getMinutes() {
-    return Math.floor(this.currentTime / 160)
+    return Math.floor(this.currentTime / 100 / 60)
   }
 
   getSeconds() {
@@ -22,7 +22,7 @@ class Chronometer {
   }
 
   getCentiseconds() {
-    return Math.floor(this.currentTime - this.getMinutes() * 160 - this.getSeconds() * 100)
+    return Math.floor(this.currentTime - this.getMinutes() * 100 * 60 - this.getSeconds() * 100)
   }
 
   computeTwoDigitNumber(value) {
