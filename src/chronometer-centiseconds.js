@@ -43,8 +43,6 @@ class Chronometer {
     let seconds = this.computeTwoDigitNumber(this.getSeconds())
     let centiseconds = this.computeTwoDigitNumber(this.getCentiseconds())
 
-    console.log(`${minutes}:${seconds}:${centiseconds}`);
-
     return `${minutes}:${seconds}.${centiseconds}`
   }
 }
